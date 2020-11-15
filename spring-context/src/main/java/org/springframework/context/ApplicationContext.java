@@ -93,9 +93,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 
 	/**
 	 * Expose AutowireCapableBeanFactory functionality for this context.
-	 * <p>This is not typically used by application code, except for the purpose of
-	 * initializing bean instances that live outside of the application context,
-	 * applying the Spring bean lifecycle (fully or partly) to them.
+	 * <p>应用程序代码通常不使用它，除非用于初始化位于应用程序上下文之外的bean实例，将Spring bean生命周期(全部或部分)应用于它们。
 	 * <p>Alternatively, the internal BeanFactory exposed by the
 	 * {@link ConfigurableApplicationContext} interface offers access to the
 	 * {@link AutowireCapableBeanFactory} interface too. The present method mainly

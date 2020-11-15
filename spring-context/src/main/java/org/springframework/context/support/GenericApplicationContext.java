@@ -363,6 +363,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 
 	//---------------------------------------------------------------------
 	// Convenient methods for registering individual beans
+	// 用于注册单个bean的方便方法
 	//---------------------------------------------------------------------
 
 	/**

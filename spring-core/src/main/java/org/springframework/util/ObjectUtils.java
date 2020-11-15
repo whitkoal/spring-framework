@@ -613,7 +613,7 @@ public abstract class ObjectUtils {
 	}
 
 	/**
-	 * Return a hex String form of an object's identity hash code.
+	 * 返回对象的标识哈希码的十六进制字符串形式。
 	 * @param obj the object
 	 * @return the object's identity code in hex notation
 	 */

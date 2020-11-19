@@ -289,8 +289,12 @@ configure(allprojects) { project ->
 			cacheChangingModulesFor 0, "seconds"
 		}
 		repositories {
+			maven { url 'https://maven.aliyun.com/repository/public/' }
+			maven { url 'https://maven.aliyun.com/repository/spring/' }
+			maven { url 'https://maven.aliyun.com/repository/google/' }
+			mavenLocal()
 			mavenCentral()
-			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+//			maven { url "https://repo.spring.io/libs-spring-framework-build" }
 		}
 	}
 	configurations.all {
@@ -422,24 +426,5 @@ configure(rootProject) {
 				artifact distZip
 			}
 		}
-	}
-}
-buildscript {
-	repositories {
-		maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-		maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
-	}
-	dependencies {
-		classpath 'com.android.tools.build:gradle:2.2.3'
-
-// NOTE: Do not place your application dependencies here; they belong
-// in the individual module build.gradle files
-	}
-}
-
-allprojects {
-	repositories {
-		maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-		maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 	}
 }
